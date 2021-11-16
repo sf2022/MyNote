@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题:" />
+
+        <EditText
+            android:id="@+id/rtitle"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_height="match_parent"
+            android:text="作者:" />
+
+        <TextView
+            android:id="@+id/rauthor"
+            android:layout_width="385dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="日期:" />
+
+        <TextView
+            android:id="@+id/rdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="285dp">
+
+        <EditText
+            android:id="@+id/rmyContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:maxLines="10"
+            android:minHeight="100dp" />
+    </TableRow>
+
+
+    <ImageView
+        android:id="@+id/rimg"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_content"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存">
+    </Button>
+    <Button
+        android:id="@+id/insert_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加图片">
+    </Button>
+
+</LinearLayout>
